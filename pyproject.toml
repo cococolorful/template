@@ -11,6 +11,8 @@ dependencies = [
     "onnx",
     "onnxscript",
     "onnxruntime",
+    "pytest",
+    "lark",
 ]
 
 [build-system]
