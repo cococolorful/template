@@ -1,9 +1,9 @@
 name: Template
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
@@ -20,8 +20,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          python3 -m build
+          python3 install .
 
       - name: Run tests
         run: |
-          pytest
+          python3 tests/test_export.py
