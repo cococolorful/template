@@ -1,0 +1,22 @@
+[project]
+name = "template"
+version = "0.1.0"
+readme = "README.md"
+authors = [{name = "He Gaoxiang", email = "hegaoxiang@nudt.edu.cn"}]
+dependencies = [
+    "numpy",
+    "torch",
+    "lightning",
+    "torchvision",
+    "onnx",
+    "onnxscript",
+    "onnxruntime",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["template"]
+package-data = {"template"=["*.py", "*.md", "LICENSE", "README.md"]}
