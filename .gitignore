@@ -4,3 +4,4 @@ MNIST
 *.pyc
 *.egg-info
 dist
+build
